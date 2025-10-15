@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Tic Tac Toe</h1>
+
+<div id="difficulty">
+  <label>Select Difficulty:</label>
+  <select id="level">
+    <option value="easy">Easy</option>
+    <option value="medium" selected>Medium</option>
+    <option value="hard">Hard</option>
+  </select>
+</div>
+
+<!-- Scoreboard -->
+<div id="scoreboard">
+  <p>Human (X): <span id="humanScore">0</span></p>
+  <p>AI (O): <span id="aiScore">0</span></p>
+  <p>Ties: <span id="tieScore">0</span></p>
+  <p>Round: <span id="round">0</span></p>
+</div>
+
+<div id="game">
+  <div class="cell" data-index="0"></div>
+  <div class="cell" data-index="1"></div>
+  <div class="cell" data-index="2"></div>
+  <div class="cell" data-index="3"></div>
+  <div class="cell" data-index="4"></div>
+  <div class="cell" data-index="5"></div>
+  <div class="cell" data-index="6"></div>
+  <div class="cell" data-index="7"></div>
+  <div class="cell" data-index="8"></div>
+</div>
+
+<p id="result"></p>
+<button id="reset">Restart Game</button>
+<button id="fullReset">Reset All Scores</button>
+
+<!-- Celebration -->
+<div id="fireworksMessage">Congratulations! You Win! 🎉</div>
+<canvas id="fireworks"></canvas>
+<audio id="celebrationMusic" src="celebration.mp3" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
